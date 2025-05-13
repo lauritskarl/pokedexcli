@@ -16,8 +16,9 @@ type cliCmd struct {
 var cmdMap = map[string]cliCmd{}
 
 func cmdExit() error {
+	fmt.Print("Closing the Pokedex... Goodbye!")
 	os.Exit(0)
-	return fmt.Errorf("Closing the Pokedex... Goodbye!")
+	return nil
 }
 
 func cmdHelp() error {
